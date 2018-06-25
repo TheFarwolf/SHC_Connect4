@@ -13,7 +13,7 @@ class Connect4 {
         const $board = $(this.selector);
         $board.empty();
         this.isGameOver = false;
-        this.player = 'red';
+        this.player = 'ORANGE';
         for (let row = 0; row < this.ROWS; row++) {
             const $row = $('<div>')
                 .addClass('row');
@@ -66,7 +66,7 @@ class Connect4 {
                 $('.col.empty').removeClass('empty');
                 return;
             }
-            that.player = (that.player === 'red') ? 'black' : 'red';
+            that.player = (that.player === 'ORANGE') ? 'BLUE' : 'ORANGE';
             that.onPlayerMove();
             $(this).trigger('mouseenter');
         })
@@ -77,7 +77,6 @@ class Connect4 {
             return $(`.col[data-row='${i}'][data-col='${j}']`);   
         }       
         function checkDirection(direction) {
-            //debugger;
             let total = 0;
             let i = row + direction.i;
             let j = col + direction.j;

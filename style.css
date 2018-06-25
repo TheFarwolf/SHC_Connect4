@@ -31,18 +31,18 @@ body {
     cursor: pointer;
 }
 
-.next-red {
+.next-ORANGE {
     background-color: rgba(242, 100, 48, 0.2);
 }
 
-.next-black {
+.next-BLUE {
     background-color: rgba(0, 157, 220, 0.2);
 }
 
-.col.red {
+.col.ORANGE {
     background-color: rgba(242, 100, 48, 1);
 }
 
-.col.black {
+.col.BLUE {
     background-color: rgba(0, 157, 220, 1);
 }
