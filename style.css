@@ -4,6 +4,31 @@ body {
     color: #7a93ac;
 }
 
+#settings {
+    text-align: left;
+}
+
+#settingsPanel {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(97, 112, 115, 1);
+    border: 5px solid white;
+    width: 500px;
+    height: 500px;
+}
+
+#applySettings {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+}
+
 #connect4 {
     background-color: #617073;
     display: inline-block;
@@ -12,14 +37,14 @@ body {
 #currentTurn {
     font-family: sans-serif;
     font-size: 30px;
-    color: white;    
+    color: white;
 }
 
 #turnBox {
     border: 5px solid white;
     margin: 1%;
     margin-left: 25%;
-    margin-right: 25%;  
+    margin-right: 25%;
     background-color: rgba(97, 112, 115, 1);
 }
 

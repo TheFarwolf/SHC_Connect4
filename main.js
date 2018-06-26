@@ -2,6 +2,7 @@
 . Add settings button
 . Add 2 themes(pieces, names)
 . Style settings and restart button
+. Fix game logic bug causing orange to win on diag 3
 */
 
 
@@ -12,5 +13,8 @@ $(document).ready(function() {
     }
     $('#restart').click(function() {
         connect4.restart();                    
-    }) 
+    })
+    $('#settings').click(function() {
+        $('#settingsPanel').toggle();
+    })
 })
