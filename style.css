@@ -4,7 +4,12 @@ body {
     color: #7a93ac;
 }
 
-#settings {
+input[type=radio] {
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+#settingsButton {
     text-align: left;
 }
 
@@ -20,12 +25,14 @@ body {
     border: 5px solid white;
     width: 500px;
     height: 500px;
+    text-align: left;
+    text-indent: 5%;
 }
 
 #applySettings {
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom: 10px;
     transform: translate(-50%, -50%);
 }
 
@@ -46,6 +53,25 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     background-color: rgba(97, 112, 115, 1);
+}
+
+.themeBox {
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+    vertical-align: middle;
+}
+.themeBox2 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+    vertical-align: middle;
 }
 
 .col {

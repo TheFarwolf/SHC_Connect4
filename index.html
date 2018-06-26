@@ -10,16 +10,27 @@
 </head>
 
 <body>
-    <div id='turnBox'>  
-    <h1 id='currentTurn'><span id='player'>RED</span>'S TURN</h1>
+    <div id='turnBox'>
+        <h1 id='currentTurn'><span id='player'>RED</span>'S TURN</h1>
     </div>
     <div id="connect4"></div>
     <br>
     <div id='settingsPanel'>
         <p>SETTINGS</p>
-        <button id='applySettings'>Apply</button>
+        <input class='theme' type='radio' name='theme' value='Classic'>Classic
+        <div class=themeBox id=Classic style='background-color: red'></div>
+        <div class=themeBox2 id=Classic style='background-color: black'></div>
+        <br>
+        <input class='theme' type='radio' name='theme' value='Earth'>Earth
+        <div class=themeBox id=Classic style='background-color: darkgreen'></div>
+        <div class=themeBox2 id=Classic style='background-color: darkkhaki'></div>
+        <br>
+        <input class='theme' type='radio' name='theme' value='Hacker'>Hacker
+        <div class=themeBox id=Classic style='background-color: lawngreen'></div>
+        <div class=themeBox2 id=Classic style='background-color: darkblue'></div>
+        <button id='applySettings'>SAVE</button>
     </div>
-    <button id='settings'>Settings</button>
+    <button id='settingsButton'>Settings</button>
     <button id='restart'>Restart</button>
 </body>
 

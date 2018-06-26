@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('#restart').click(function() {
         connect4.restart();                    
     })
-    $('#settings').click(function() {
-        $('#settingsPanel').toggle();
+    $('#settingsButton').click(function() {
+        $('#settingsPanel').toggle(300);
     })
 })
