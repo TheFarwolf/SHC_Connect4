@@ -1,12 +1,11 @@
 /*  TODO
-. Style settings and restart button
+. Style settings and restart button -> reliant on CSS theme names
 . Fix game logic bug causing orange to win on diag 3
 . Add warning that changing the theme restarts the game
-. Add button to toggle settings panel without saving changes
+. Add button to toggle settings panel without saving changes(restarting)
 . refactor changeTheme() call and function code
+. Turn box is off by a few pixels...
 */
-
-
 $(document).ready(function () {
     const connect4 = new Connect4('#connect4');
     connect4.onPlayerMove = function () {
@@ -18,6 +17,7 @@ $(document).ready(function () {
     $('#settingsButton').click(function () {
         $('#settingsPanel').toggle(300);
     })
+    
     $('#applySettings').click(function () {
         var radioValue = $("input[name='theme']:checked").val();
         var theme = {
