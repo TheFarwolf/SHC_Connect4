@@ -1,9 +1,9 @@
 /*  TODO
-. Add settings button
-. Add 2 themes(pieces, names)
 . Style settings and restart button
 . Fix game logic bug causing orange to win on diag 3
-. First piece after theme change is the color of old theme.
+. Add warning that changing the theme restarts the game
+. Add button to toggle settings panel without saving changes
+. refactor changeTheme() call and function code
 */
 
 
