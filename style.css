@@ -27,6 +27,8 @@ input[type=radio] {
     height: 500px;
     text-align: left;
     text-indent: 5%;
+    /*for testing, change to none*/
+    display: 0;
 }
 
 #applySettings {
@@ -89,6 +91,8 @@ input[type=radio] {
     cursor: pointer;
 }
 
+/* Brightly - BLUE and ORANGE */
+
 .next-ORANGE {
     background-color: rgba(242, 100, 48, 0.2);
 }
@@ -103,4 +107,40 @@ input[type=radio] {
 
 .col.BLUE {
     background-color: rgba(0, 157, 220, 1);
+}
+
+/*Classic - RED and BLACK */
+
+.next-RED {
+    background-color: rgba(183, 11, 11, 0.2);
+}
+
+.next-BLACK {
+    background-color: rgba(53, 53, 53, 0.2);
+}
+
+.col.RED {
+    background-color: rgba(183, 11, 11, 1);
+}
+
+.col.BLACK {
+    background-color: rgba(53, 53, 53, 1);
+}
+
+/* Earth - GREEN and BROWN */
+
+.next-GREEN {
+    background-color: rgba(57, 140, 60, 0.2);
+}
+
+.next-BROWN {
+    background-color: rgba(150, 120, 79, 0.2);
+}
+
+.col.GREEN {
+    background-color: rgba(57, 140, 60, 1);
+}
+
+.col.BROWN {
+    background-color: rgba(150, 120, 79, 1);
 }
