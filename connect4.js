@@ -1,8 +1,10 @@
+var player1 = 'ORANGE';
+var player2 = 'BLUE'
 class Connect4 {
     constructor(selector) {
         this.ROWS = 6;
         this.COLS = 7;
-        this.player = 'red';
+        this.player = player1;
         this.selector = selector;
         this.isGameOver = false;
         this.onPlayerMove = function() {};
@@ -13,7 +15,7 @@ class Connect4 {
         const $board = $(this.selector);
         $board.empty();
         this.isGameOver = false;
-        this.player = 'ORANGE';
+        this.player = player1;
         for (let row = 0; row < this.ROWS; row++) {
             const $row = $('<div>')
                 .addClass('row');
@@ -26,6 +28,10 @@ class Connect4 {
             }
             $board.append($row);
         }
+    }
+    changeTheme(theme) {
+        player1 = theme.color1;
+        player2 = theme.color2;
     }
     setupEventListeners() {
         const $board = $(this.selector);
@@ -66,7 +72,7 @@ class Connect4 {
                 $('.col.empty').removeClass('empty');
                 return;
             }
-            that.player = (that.player === 'ORANGE') ? 'BLUE' : 'ORANGE';
+            that.player = (that.player === player1) ? player2 : player1;
             that.onPlayerMove();
             $(this).trigger('mouseenter');
         })
