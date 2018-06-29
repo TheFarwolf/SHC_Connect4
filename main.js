@@ -1,10 +1,7 @@
 /*  TODO
-. Style settings panel and restart button -> reliant on CSS theme names
 . Fix game logic bug causing orange to win on diag 3
-. Add warning that changing the theme restarts the game
-. Add button to toggle settings panel without saving changes(restarting)
 . refactor changeTheme() call and function code
-. Palyer turn box is off by a few pixels...
+. Player turn box is off by a few pixels...
 */
 $(document).ready(function () {
     const connect4 = new Connect4('#connect4');
