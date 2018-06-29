@@ -29,9 +29,9 @@ class Connect4 {
             $board.append($row);
         }
     }
-    changeTheme(theme) {
-        player1 = theme.color1;
-        player2 = theme.color2;
+    changeTheme(c) {
+        player1 = c[0];
+        player2 = c[1];
     }
     setupEventListeners() {
         const $board = $(this.selector);
