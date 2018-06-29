@@ -9,6 +9,22 @@ input[type=radio] {
     margin-bottom: 10%;
 }
 
+button {
+    margin: 5px;
+    font-family: Arial;
+    color: #f7f7f7;
+    font-size: 15px;
+    background: rgba(97, 112, 115, 1);
+    padding: 10px 20px 10px 20px;
+    border: solid white 3px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
 #settingsButton {
     text-align: left;
 }
@@ -31,11 +47,14 @@ input[type=radio] {
     display: 0;
 }
 
-#applySettings {
-    position: absolute;
+#settingsButtonsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 50%;
     left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 #connect4 {
@@ -66,6 +85,7 @@ input[type=radio] {
     border: 5px solid white;
     vertical-align: middle;
 }
+
 .themeBox2 {
     display: inline-block;
     position: absolute;

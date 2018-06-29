@@ -17,7 +17,6 @@ $(document).ready(function () {
     $('#settingsButton').click(function () {
         $('#settingsPanel').toggle(300);
     })
-    
     $('#applySettings').click(function () {
         var radioValue = $("input[name='theme']:checked").val();
         var theme = {
@@ -36,6 +35,9 @@ $(document).ready(function () {
         }
         connect4.changeTheme(theme);
         connect4.restart();
+        $('#settingsPanel').toggle(300);
+    })
+    $('#closeSettings').click(function () {
         $('#settingsPanel').toggle(300);
     })
 })
